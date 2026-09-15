@@ -16,7 +16,7 @@ public class Game {
         IO.println("Vad heter spelare nummer två?");
         String firstName2 = playerName("Förnamn: ");
         String lastName2 = playerName("Efternamn: ");
-        
+
         Person p1 = new Person(firstName1, lastName1);
         Person p2 = new Person(firstName2, lastName2);
 
@@ -80,7 +80,7 @@ public class Game {
                     isFinished();
                     break;
                 } else {
-                    IO.println("Skriv in endast 1 eller 2");
+                    IO.println("\nSkriv in endast 1 eller 2");
                     askAgain = IO.readln("\n1. Spela igen\n2. Avsluta spelet ");
                 }
             }
